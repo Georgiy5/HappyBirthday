@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CUSTOMIZE: Change the title -->
-    <title>Our Memories ✨</title>
+    <title>Наши воспоминания ✨</title>
     <!-- CUSTOMIZE: Change favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
+    <script>
+        const unlockTime = new Date('May 30, 2026 00:00:00').getTime();
+        if (Date.now() < unlockTime) {
+            window.location.replace('index.html');
+        }
+    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;400;500;600&display=swap');
 
@@ -348,10 +354,10 @@
     <audio id="bgMusic" loop>
         <source src="hbd.mp3" type="audio/mpeg">
     </audio>
-    <div class="music-toggle" id="musicToggle" title="Toggle Music">
+    <div class="music-toggle" id="musicToggle" title="Музыка">
         <span class="music-icon">🎵</span>
     </div>
-    <a href="timeline.html" class="back-btn" title="Go Back">←</a>
+    <a href="timeline.html" class="back-btn" title="Назад">←</a>
 
     <div class="floating-hearts">
         <div class="heart" style="--float-duration: 6s; --delay: 0s; --translate-x: 20px; left: 10%;">💝</div>
@@ -363,9 +369,9 @@
 
     <section class="welcome">
         <!-- CUSTOMIZE: Change the title -->
-        <h1>Our Special Moments</h1>
+        <h1>Наши особенные моменты</h1>
         <!-- CUSTOMIZE: Change the description -->
-        <p>Some moments are just meant to be treasured. Here's to all the laughs, talks, and unforgettable times we've shared...</p>
+        <p>Некоторые моменты просто созданы, чтобы их беречь. За все наши смехи, разговоры и незабываемые дни...</p>
     </section>
 
     <div class="memory-container">
@@ -375,36 +381,36 @@
         <div class="memory-card">
             <img src="./photos/photo-1.jpg" alt="Memory 1" class="memory-img">
             <!-- CUSTOMIZE: Change date/title -->
-            <div class="memory-date">A Special Day</div>
+            <div class="memory-date">Питер, тот самый вайб</div>
             <!-- CUSTOMIZE: Change caption -->
-            <div class="memory-caption">The best memories are made with the best people. So grateful for every moment we share! 💫</div>
+            <div class="memory-caption">Мы с Лизой путешествуем по Петербургу — особый моментик и очень сильный вайб. 💫</div>
         </div>
 
         <div class="memory-card">
             <img src="./photos/photo-2.jpg" alt="Memory 2" class="memory-img">
-            <div class="memory-date">Beautiful Moments</div>
-            <div class="memory-caption">You radiate positivity wherever you go. Keep shining bright! ✨</div>
+            <div class="memory-date">Тюльпанчики и мост</div>
+            <div class="memory-caption">Мы кайфуем в тюльпанчиках: фотки тогда были просто шик, а прогулка пешком по мосту — чистая атмосферка. ✨</div>
         </div>
 
         <div class="memory-card">
             <img src="./photos/photo-3.jpg" alt="Memory 3" class="memory-img">
-            <div class="memory-date">Birthday Vibes</div>
-            <div class="memory-caption">Another year of celebrating you! Here's to making this birthday even more special! 🎂💖</div>
+            <div class="memory-date">Мержаново, море</div>
+            <div class="memory-caption">Моя зайка стоит на берегу моречка — то самое долгожданное Мержаново. 🌊💖</div>
         </div>
     </div>
 
     <section class="final-message">
         <!-- CUSTOMIZE: Change name and age -->
-        <h2>Happy [AGE]th Birthday, [THEIR NAME]! 🎂</h2>
+        <h2>С 20-летием, Лиза! 🎂</h2>
         <!-- CUSTOMIZE: Change the message -->
-        <p>From our first meeting to becoming inseparable - what a journey! 💫<br>
-            Through every moment, every laugh, every memory - you've been amazing.<br>
-            Here's to another year of our wonderful friendship! 🎉</p>
-        <p>You deserve all the happiness in the world. Keep being YOU! ✨</p>
+        <p>От нашей первой встречи до того, как мы стали неразлучны — какой путь! 💫<br>
+            Через каждый момент, каждый смех, каждое воспоминание — ты была невероятной.<br>
+            За еще один год нашей замечательной дружбы! 🎉</p>
+        <p>Ты заслуживаешь всего самого светлого. Оставайся собой! ✨</p>
         <!-- CUSTOMIZE: Change your name -->
-        <p class="signature">- With love, [YOUR NAME] 💖</p>
-        <a href="#" class="goodbye-btn" onclick="celebrate()">Celebrate! 🎊</a>
-        <button class="share-btn" onclick="shareWebsite()">Share This 💌</button>
+        <p class="signature">- С любовью, Жора 💖</p>
+        <a href="#" class="goodbye-btn" onclick="celebrate()">Празднуем! 🎊</a>
+        <button class="share-btn" onclick="shareWebsite()">Поделиться 💌</button>
     </section>
 
     <!-- Confetti Canvas -->
@@ -517,8 +523,8 @@
         // Share function - CUSTOMIZE: Update the share message
         function shareWebsite() {
             const shareData = {
-                title: 'Happy Birthday!',
-                text: 'Check out this special birthday wish! 💖',
+                title: 'С днем рождения!',
+                text: 'Посмотри на это особенное поздравление! 💖',
                 url: window.location.href
             };
 
@@ -527,9 +533,9 @@
                     .catch((err) => console.log('Share cancelled'));
             } else {
                 navigator.clipboard.writeText(window.location.href).then(() => {
-                    alert('Link copied to clipboard! 💖');
+                    alert('Ссылка скопирована! 💖');
                 }).catch(() => {
-                    alert('Share this link: ' + window.location.href);
+                    alert('Поделись ссылкой: ' + window.location.href);
                 });
             }
         }

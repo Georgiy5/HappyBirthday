@@ -36,27 +36,27 @@ if (localStorage.getItem('musicPlaying') === 'true') {
 // - gif: Animation file to show (optional, use animation-1.gif or animation-2.gif)
 const reasons = [
     {
-        text: "Because you always know how to make me smile! 💖",
+        text: "Ты всегда умеешь заставить меня улыбнуться! 💖",
         emoji: "✨",
         gif: "gif1.gif"
     },
     {
-        text: "Because you're the best listener I know! 🌸",
+        text: "Ты самый внимательный слушатель! 🌸",
         emoji: "💫",
         gif: "gif2.gif"
     },
     {
-        text: "Because your laugh is contagious! ✨",
+        text: "Твой смех заразителен! ✨",
         emoji: "🌟",
         gif: "gif1.gif"
     },
     {
-        text: "Because you make every moment special! 🎂",
+        text: "Ты делаешь каждый момент особенным! 🎂",
         emoji: "💖",
         gif: "gif2.gif"
     },
     {
-        text: "Because you're simply amazing! Here's to another wonderful year! 🎉",
+        text: "Ты просто невероятная! Пусть этот год будет волшебным! 🎉",
         emoji: "🎊",
         gif: "gif1.gif"
     }
@@ -106,7 +106,7 @@ function displayNewReason() {
         reasonsContainer.appendChild(card);
 
         // Update counter
-        reasonCounter.textContent = `Reason ${currentReasonIndex + 1} of ${reasons.length}`;
+        reasonCounter.textContent = `Причина ${currentReasonIndex + 1} из ${reasons.length}`;
 
         currentReasonIndex++;
 
@@ -118,7 +118,7 @@ function displayNewReason() {
                 ease: "elastic.out",
                 onComplete: () => {
                     // CUSTOMIZE: Change button text
-                    shuffleButton.textContent = "Continue to Timeline 💫";
+                    shuffleButton.textContent = "Дальше: таймлайн 💫";
                     shuffleButton.classList.add('story-mode');
                     shuffleButton.addEventListener('click', () => {
                         gsap.to('body', {

@@ -1,14 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CUSTOMIZE: Change the title -->
-    <title>Our Journey 💫</title>
+    <title>Наш путь 💫</title>
     <!-- CUSTOMIZE: Change favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        const unlockTime = new Date('May 30, 2026 00:00:00').getTime();
+        if (Date.now() < unlockTime) {
+            window.location.replace('index.html');
+        }
+    </script>
     <style>
         * {
             margin: 0;
@@ -338,14 +344,13 @@
     <audio id="bgMusic" loop>
         <source src="hbd.mp3" type="audio/mpeg">
     </audio>
-    <div class="music-toggle" id="musicToggle" title="Toggle Music">
+    <div class="music-toggle" id="musicToggle" title="Музыка">
         <span class="music-icon">🎵</span>
     </div>
-    <a href="wishes.html" class="back-btn" title="Go Back">←</a>
+    <a href="wishes.html" class="back-btn" title="Назад">←</a>
 
     <!-- CUSTOMIZE: Change the title and subtitle -->
-    <h1 class="page-title">Our Journey Together 💫</h1>
-    <p class="page-subtitle">From Strangers to Best Friends</p>
+    <h1 class="page-title">Наш путь вместе 💫</h1>
 
     <div class="timeline">
         <!-- CUSTOMIZE: Add your timeline events here -->
@@ -354,103 +359,118 @@
         <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-                <div class="timeline-emoji">💬</div>
-                <!-- CUSTOMIZE: Change date -->
-                <div class="timeline-date">January 1, 2023</div>
-                <!-- CUSTOMIZE: Change title -->
-                <div class="timeline-title">First Meeting</div>
-                <!-- CUSTOMIZE: Change description -->
-                <div class="timeline-desc">The day we first met! Little did we know this would be the start of an amazing journey.</div>
+                <div class="timeline-emoji">👀</div>
+                <div class="timeline-date">Декабрь 2022</div>
+                <div class="timeline-title">Та самая задняя парта</div>
+                <div class="timeline-desc">Я заметил тебя на той самой задней парте и влюбился. Мы начали общаться и привыкать друг к другу.</div>
             </div>
         </div>
 
         <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-                <div class="timeline-emoji">🤝</div>
-                <div class="timeline-date">March 15, 2023</div>
-                <div class="timeline-title">Becoming Friends</div>
-                <div class="timeline-desc">The friendship started feeling more real! We began spending more time together.</div>
+                <div class="timeline-emoji">🌷</div>
+                <div class="timeline-date">Весна 2023</div>
+                <div class="timeline-title">Спокойствие</div>
+                <div class="timeline-desc">Просто все было хорошо, ничего не предвещало беды.</div>
             </div>
         </div>
 
         <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-                <div class="timeline-emoji">😊</div>
-                <div class="timeline-date">June 20, 2023</div>
-                <div class="timeline-title">First Adventure</div>
-                <div class="timeline-desc">Our first adventure together! An unforgettable experience that brought us closer.</div>
+                <div class="timeline-emoji">💔</div>
+                <div class="timeline-date">Май 2023</div>
+                <div class="timeline-title">Разрыв</div>
+                <div class="timeline-desc">Ты меня послала нафиг.</div>
             </div>
         </div>
 
         <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-                <div class="timeline-emoji">⚡</div>
-                <div class="timeline-date">Through The Journey</div>
-                <div class="timeline-title">Ups and Downs</div>
-                <div class="timeline-desc">We've had our moments, but we always found our way back. That's what real friendship is about!</div>
+                <div class="timeline-emoji">🧩</div>
+                <div class="timeline-date">Май – декабрь 2023</div>
+                <div class="timeline-title">Попытки воссоединения</div>
+                <div class="timeline-desc">Мы пытались снова быть вместе.</div>
             </div>
         </div>
 
         <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-                <div class="timeline-emoji">🎂</div>
-                <!-- CUSTOMIZE: Change to their birthday date -->
-                <div class="timeline-date">January 25, 2025</div>
-                <div class="timeline-title">Your Birthday!</div>
-                <!-- CUSTOMIZE: Update the message -->
-                <div class="timeline-desc">And here we are, celebrating YOU! Another year of our amazing friendship... 💖</div>
+                <div class="timeline-emoji">✨</div>
+                <div class="timeline-date">19 декабря 2023</div>
+                <div class="timeline-title">Чудо</div>
+                <div class="timeline-desc">О боже, чудо свершилось: ты согласилась снова быть рядом со мной.</div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-emoji">🏠</div>
+                <div class="timeline-date">Сентябрь 2024</div>
+                <div class="timeline-title">Ростов и вместе</div>
+                <div class="timeline-desc">Ты приехала в Ростов, кажется, ни одного дня у Ксюши не пожила, и мы начали вместе жить.</div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-emoji">💞</div>
+                <div class="timeline-date">Настоящее время</div>
+                <div class="timeline-title">Ты — та самая</div>
+                <div class="timeline-desc">Я просто обожаю тебя, люблю и с каждым днем все больше и больше подтверждаю для себя, что ты — та самая.</div>
             </div>
         </div>
     </div>
 
-    <!-- Friendship Receipt - CUSTOMIZE all values -->
+    <!-- Love Receipt - CUSTOMIZE all values -->
     <div class="receipt-container">
         <div class="receipt-header">
-            <div class="receipt-title">🧾 FRIENDSHIP RECEIPT</div>
+            <div class="receipt-title">🧾 ЧЕК ЛЮБВИ</div>
             <!-- CUSTOMIZE: Change subtitle -->
-            <div class="receipt-subtitle">Best Friends Inc.</div>
+            <div class="receipt-subtitle">Отношения</div>
         </div>
         <div class="receipt-row">
-            <span class="receipt-label">Years of Friendship:</span>
+            <span class="receipt-label">Годы в отношениях:</span>
             <!-- CUSTOMIZE: Update value -->
-            <span class="receipt-value">2+ years</span>
+            <span class="receipt-value">3+ года</span>
         </div>
         <div class="receipt-row">
-            <span class="receipt-label">First Meeting:</span>
+            <span class="receipt-label">Первая встреча:</span>
             <!-- CUSTOMIZE: Update date -->
-            <span class="receipt-value">Jan 1, 2023</span>
+            <span class="receipt-value">дек 2022</span>
         </div>
         <div class="receipt-row">
-            <span class="receipt-label">Adventures Together:</span>
-            <span class="receipt-value">Many 📍</span>
+            <span class="receipt-label">Приключений вместе:</span>
+            <span class="receipt-value">Много 📍</span>
         </div>
         <div class="receipt-row">
-            <span class="receipt-label">Laughs Shared:</span>
-            <span class="receipt-value">Countless 😄</span>
+            <span class="receipt-label">Смешных моментов:</span>
+            <span class="receipt-value">Бесконечно 😄</span>
         </div>
         <div class="receipt-row">
-            <span class="receipt-label">Inside Jokes:</span>
-            <span class="receipt-value">Too many!</span>
+            <span class="receipt-label">Внутренних шуток:</span>
+            <span class="receipt-value">Очень много!</span>
         </div>
         <div class="receipt-row">
-            <span class="receipt-label">Memories Made:</span>
-            <span class="receipt-value">∞ Infinite</span>
+            <span class="receipt-label">Воспоминаний:</span>
+            <span class="receipt-value">∞ бесконечно</span>
         </div>
         <div class="receipt-total">
-            <strong>TOTAL FRIENDSHIP VALUE: PRICELESS 💖</strong>
+            <strong>ИТОГО ЛЮБВИ: БЕСЦЕННО 💖</strong>
         </div>
         <div class="receipt-footer">
-            Thank you for being an amazing friend!<br>
+            Спасибо за любовь!<br>
             <!-- CUSTOMIZE: Change your name -->
-            - [YOUR NAME] 💖
+            - от Жоры 💖
         </div>
     </div>
 
-    <button class="next-btn" onclick="goToMemories()">View Our Memories 📸</button>
+    <button class="next-btn" onclick="goToMemories()">Смотреть наши воспоминания 📸</button>
 
     <script>
         // Music Control
